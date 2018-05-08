@@ -1,53 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>Portfolio // Frances Oh</title>
-      <!-- Material Design Lite -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-deep_purple.min.css">
-      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<head>
+    <title>Frances Oh | UX UI Designer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link relal="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
 
-      <!-- Custom Styles -->
-      <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-      <header class="mdl-layout__header mdl-layout__header--transparent">
-        <h1>Frances Oh</h1>
-        <p class="slogan">Product Designer from sunny Southern California</p>
-      </header>
-      <main class="mdl-layout__content mdl-grid">
-        <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-         <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-            <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-          </div>
-          <div class="mdl-cell mdl-cell--7-col">
-            <h2 class="mdl-card__title-text">Featured Project Name</h2>
-            <p class="project-description mdl-card__supporting-text">Project description text</p>
-          </div>
+<!-- Nav bar -->
+<header>
+  <nav class="nav header-nav">
+    <ul>
+      <li class="nav">
+        <a href="#section-next">Work</a>
+      </li>
+
+      <li class="nav">
+        <a href="about.html">About</a>
+      </li>
+
+      <li class="nav">
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero -->
+    <div class="hero-background">
+        <div class="hero-intro">
+            <h1 id="site-title">hello!</h1>
         </div>
-          <div class="project">
-            <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-            <h2>Project name</h2>
-            <p>Project description text</p>
-          </div>
-          <div class="project">
-              <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
-              <h2>Project name</h2>
-              <p>Project description text</p>
-          </div>
-          <div class="project">
-            <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
-            <h2>Project Name</h2>
-            <p>Project description text</p>
-          </div>
-        </main>
-        <footer>
-          <ul>
-            <li> <a href="https://www.linkedin.com/in/francesoh/">LinkedIn</a> </li>
-            <li> <a href="https://github.com/ifohi/ifohi.github.io">GitHub</a> </li>
-            <li> <a href="https://twitter.com/ohnam0221">Twitter</a> </li>
-            <li> <a href="mailto:fhoh85@gmail.com">Email</a> </li>
-          </ul>
-        </footer>
-  </body>
+
+    <div class="intro-content">
+        <h1 class="headline">
+          I’m Frances - <br>
+          a UX designer in Orange County, CA.
+        </h1>
+        <p class="hero-description">Come see what I've been working on.</p>
+    </div>
+
+<!-- Portfolio Projects -->
+    <section id="projects">
+        <div class="casestudy">
+            <div class="portfolio-piece">
+                <h3 class="portfolio-piece-title">Store.it</h3>
+                <p class="portfolio-piece-tags">Store.it is a SaaS product
+                  that <br> allows users to organize and <br> share content
+                  with a <br> straightforward design.</p>
+            </div>
+            <div class="portfolio-piece">
+                <h3 class="portfolio-piece-title">Project 2</h3>
+                <p class="portfolio-piece-tags">Project Blurb</p>
+            </div>
+            <div class="portfolio-piece">
+                <h3 class="portfolio-piece-title">Project 3</h3>
+                <p class="portfolio-piece-tags">Project Blurb</p>
+            </div>
+            <div class="portfolio-piece">
+                <h3 class="portfolio-piece-title">Coming Soon...</h3>
+                <p class="portfolio-piece-tags">Project Blurb</p>
+        </div>
+      </section>
+
+
+<!-- Footer -->
+    <section id="contact">
+      <h2 class="white center"></h2>
+      <h3 class="connect-title">Let's Connect</h3>
+      <p class="connect-blurb">Want to chat about a potential project or simply grab coffee?<br>
+          I’m looking for new opportunities and<br>
+          would love to hear from you!</p>
+      <div class="social">
+        <li> <a href="https://www.linkedin.com/in/francesoh/">LinkedIn</a> </li>
+        <li> <a href="https://github.com/ifohi/ifohi.github.io">GitHub</a> </li>
+        <li> <a href="https://twitter.com/ohnam0221">Twitter</a> </li>
+        <li> <a href="mailto:fhoh85@gmail.com">Email</a> </li>
+      </div>
+
+      <a href="" class="button" id="contact-cta">Contact Me</a>
+
+      <!-- Copyright -->
+
+				<p class="copyright">&copy; 2018 Frances Oh  |  Designed and Developed by Frances Oh</p>
+    </section>
+
+</body>
 </html>
