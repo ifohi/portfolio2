@@ -8,13 +8,18 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 
 </head>
-<body>
+<body="wrapper">
 
 
 
 
 <!-- Nav bar -->
-    <header>
+
+    <header class="si-header">
+
+      <!-- Personal logo -->
+          <img class="personal-logo" id="logo" src="images/personal-logo/personal-logo.png" alt="personal-logo" 30px 30px/>
+
       <nav class="navbar">
         <ul>
           <li class="nav">
@@ -30,73 +35,70 @@
           </li>
         </ul>
       </nav>
-<!-- Personal logo -->
-      <img class="personal-logo" id="logo" src="images/personal-logo/personal-logo.png" alt="personal-logo" 30px 30px/>
 
-    </header>
+      <!-- Store.it Logo -->
+      <div>
+          <img class="si-logo" src="images/icon-si-white.png" alt="product-logo"></a>
+      </div>
+      <div class="intro-content">
+        <p class="si-sub-headline">
+          Makes organizing and sharing <br>
+          online content a cinch with a simple yet <br> intuitive design</p>
+      </div>
+          <a href="" class="btn">View InVision Prototype</a>
+      </div>
+  </header>
 
-<!--hero-->
-  <div class="hero-background">
-    <div class="hero-intro-casestudy">
-        <h1 id="site-title">Store.it</h1>
-    </div>
 
-    <!-- Store.it Logo -->
-    <div class="logo">
-        <a href="index.hmtl"><img src="images/logo.png" alt="product-logo"></a>
 
-    <div class="intro-content">
-      <p class="sub-headline">
-        Makes organizing and sharing <br>
-        online content a cinch with a simple yet <br> intuitive design
-      </p>
-
-    </div>
-        <a href="" class="button" id="contact-cta">View InVision Prototype</a>
 
 
 <!--Roles, Deliverables, Tools (RDT) -->
-    <div class="main">
-			   <section class="section-RDT">
-							<h3>Design Roles</h3>
-							<ul>
-								<li><a href="#">UX Design</a></li>
-								<li><a href="#">Visual Design</a></li>
-								<li><a href="#">Brand &amp; Identity</a></li>
-							</ul>
-              <div class="vertical-line">
+			   <section class="container-section-RDT">
 
+          <div class="si-left-side">
+              <h3 class="si-header-left">Design Roles</h3>
+  							<ul class="si-ul-left">
+  								<li class="si-li-left">UX Design</li>
+  								<li class="si-li-left">Visual Design</li>
+  								<li class="si-li-left">Brand &amp; Identity</li>
+  							</ul>
+            </div>
 
-							<h3>Design deliverables</h3>
-							<ul>
-								<li><a href="#">User Surveys</a></li>
-								<li><a href="#">Personas</a></li>
-								<li><a href="#">Competitive Analysis</a></li>
-								<li><a href="#">User Stories &amp; Flows</a></li>
-								<li><a href="#">Paper Prototype</a></li>
-								<li><a href="#">Wireframes</a></li>
-								<li><a href="#">User Testing</a></li>
-								<li><a href="#">Visual Design</a></li>
-							</ul>
-              <div class="vertical-line">
+            <div class="si-middle-side">
+							<h3 class="si-header-middle">Design Deliverables</h3>
+  							<ul class="si-ul-middle">
+  								<li class="si-li-middle">User Surveys</li>
+  								<li class="si-li-middle">Personas</li>
+  								<li class="si-li-middle">Competitive Analysis</li>
+  								<li class="si-li-middle">User Stories &amp; Flows</li>
+  								<li class="si-li-middle">Paper Prototype</li>
+  								<li class="si-li-middle">Wireframes</li>
+  								<li class="si-li-middle">User Testing</li>
+  								<li class="si-li-middle">Visual Design</li>
+  							</ul>
+              </div>
 
-							<h3>Tools</h3>
-							<ul>
-								<li><a href="#">Sketch</a></li>
-                <li><a href="#">Invision</a></li>
-								<li><a href="#">Usability Hub</a></li>
-							</ul>
+            <div class="si-right-side">
+							<h3 class="si-header-right">Tools</h3>
+  							<ul class="si-ul-right">
+  								<li class="si-li-middle">Sketch</li>
+                  <li class="si-li-middle" >Invision</li>
+  								<li class="si-li-middle">Usability Hub</li>
+  							</ul>
+            </div>
 				</section>
       </div>
 
 <!-- Probs & Solution -->
-  <section class="prob-solution">
+  <section class="container-prob-solution">
     <div class="prob-solution-left-side">
         <h3>What is Store.it?</h3>
         <p>It’s a SaaS web application that’s a go-to place to <br> easily
           store, organize and share information. It has a <br> clean &
           functional interface where users can start <br> using it at the
           first login.</p>
+    </div>
     <div class="prob-solution-right-side">
         <h3>Problem</h3>
         <p>Need a convenient place to save and share online <br>content, such
@@ -109,17 +111,20 @@
   </section>
 
 <!-- User research -->
-<section class="research">
+<section class="container-research">
+
     <h3 class="results-side-header">User Research</h3>
-      <p class="results-para">I started my research by conducting an online survey in order to understand the <br>
-         users and to find out what they’re looking for in a cloud storage system. <br>
-         Majority of users are already utilizing cloud storage to some degree. One pain<br>
-         point is that they often “dump” their content into the dashboard so they’re <br>
-         looking for an efficient way to organize their files. With these factors in mind, I <br>
+      <p class="results-para">I started my research by conducting an online survey in order to understand the
+         users and to find out what they’re looking for in a cloud storage system.
+         Majority of users are already utilizing cloud storage to some degree. One pain
+         point is that they often “dump” their content into the dashboard so they’re
+         looking for an efficient way to organize their files. With these factors in mind, I
          went onto competitive analysis of the current cloud storage market.</p>
+</section>
+<section class="container-research-percentages">
     <div class="results-percent">
-      <h4>86%</h4>
-      <p class="percent-desc">of users utilize cloud storage</p>
+      <h4>86%</h4><p class="percent-desc">of users utilize cloud storage</p>
+
       <h4>72%</h4>
       <p class="percent-desc">of those users utilize Google Drive</p>
       <h4>84%</h4>
@@ -142,6 +147,7 @@
         polished interface with an intuitive dashboard but their paid plans are more expensive than <br>
          other options. Amazon Drive has unlimited photo storage, but users must first be paid members.<br>
          With these features in mind, I focused on a simple yet functional product for users to organize their contents.
+  </section>
 
 <!-- Bottom Line -->
   <section class="bottom-line">
