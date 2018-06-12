@@ -68,6 +68,20 @@ h3 {
 
 }
 
+.si-icon-white {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    padding-top: 170px;
+}
+
+.si-sub-headline {
+    font-size: 1em;
+}
+
+
+
 .all-RDT {
   display: grid;
   grid-template-columns: 1fr repeat(3, 4fr) 1fr;
@@ -103,26 +117,62 @@ h3 {
 }
 
 .container-research {
-  grid-column: 2 / span 4;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: .65fr 1.3fr 5fr .65fr;
+ 
+  grid-template-areas: 
+      ". results-side-header results-para .";
   grid-row: 5;
   background-color: #F3E4DF;
+
 }
 
+.results-side-header {
+    grid-area: results-side-header;
+}
 .results-para {
-  grid-column: -6 / span 4;
-  grid-row: 5;
-  background-color: #F3E4DF;
+  grid-area: results-para;
+
 }
 
 .container-research-percentages {
+  display: grid;
+  grid-template-columns: 1.4fr 4fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    ". percent1"
+    ". percent2"
+    ". percent3"
+    ". percent4"
+    ". percent5"
+      ;
   grid-column: 1 / -1;
   grid-row: 6;
   font-size: 1em;
   background-image: url(../images/plants.png);
   color: #F3E4DF;
-  text-align: center;
+  text-align: left;
 }
 
+.percent1 {
+    grid-area: percent1;
+}
+
+.percent2 {
+    grid-area: percent2;
+}
+
+.percent3 {
+    grid-area: percent3;
+}
+
+.percent4 {
+    grid-area: percent4;
+}
+.percent5 {
+    grid-area: percent5;
+}
 
 .container-comp-analysis {
   grid-column: 2;
@@ -135,24 +185,38 @@ h3 {
 }
 
 .container-bottom-line {
-  grid-column: 50% / span 3;
+
+  grid-column: 1 / -1;
+
+
   grid-row: 8;
-  align-items: center;
+  text-align: center;
   background-color: #2A404E;
   color: white;
 }
 
-h3.bottom-line-header {
-  text-align: center;
+.
+.bottom-line-header {
+  grid-area: bottom-line-header;
+  grid-column: 2;
+  
 }
 
-ul, li.bottom-line-li {
-  display: block !important;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.bottom-line-li1 {
+  grid-area: li.bottom-line-li1;
 
 }
+
+.bottom-line-li2 {
+  grid-area: li.bottom-line-li2;
+
+}
+
+.bottom-line-li3 {
+  grid-area: li.bottom-line-li3;
+
+}
+
 
 
 .container-personas {
@@ -193,7 +257,7 @@ ul, li.bottom-line-li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 65vh;
+  height: 75vh;
   grid-column: 1 / -1;
 
   grid-row: 11;
@@ -255,34 +319,56 @@ color: white;
 }
 
 .container-learned {
-  grid-column: 2;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: .5fr 1.3fr 4fr .5fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+  ". . . ."
+  ". learned-side-header learned-para .";
   grid-row: 16;
+  background-image: url(../images/Takeaways.png);
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.learned-side-header {
+    grid-area: learned-side-header;
 }
 
 .learned-para {
-  grid-column: 3 / span 4;
-  grid-row: 16;
+  grid-area: learned-para;
+  
 }
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-  grid-template-rows: 4fr 4fr;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 3fr;
   grid-template-areas:
-  ". . connect-title . ."
-  ". . connect-blurb . .";
+  ". connect-title ."
+  ". connect-blurb .";
   grid-row: 17 / span 2;
   text-align: center;
+  background-color: #F3E4DF;
 }
 
 .connect-title {
   grid-area: connect-title;
   padding: 0;
   font-size: 1.6em;
-  margin-top: 5em;
+  
 
 }
 .connect-blurb {
   grid-area: connect-blurb;
 
+}
+
+a.social-link {
+    padding: 12px;
 }
