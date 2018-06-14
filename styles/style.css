@@ -30,17 +30,12 @@ h3 {
   padding-top: 25px;
 }
 
-.nav {
-  padding-right: 12px;
-}
-
-.si-logo {
+.navbar li {
+    list-style-type: none;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    padding: 0;
+    display: inline;
+    padding: 12px;
 }
 
 .si-sub-headline {
@@ -65,23 +60,36 @@ h3 {
   color: #fff;
   grid-column: 1 / -1;
   height: 500px;
+}
 
+.si-icon-white {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 175px;
 }
 
 .all-RDT {
   display: grid;
   grid-template-columns: 1fr repeat(3, 4fr) 1fr;
+  grid-template-rows: 1fr 4fr 1.2fr;
   grid-template-areas:
-  ". container-section-RDT1 container-section-RDT2 container-section-RDT3 .";
+      ". . . . ."
+      ". container-section-RDT1 container-section-RDT2 container-section-RDT3 ."
+      ". . . . .";
+
   text-align: center;
   background-color: #EEEAEA;
   grid-column: 1 / -1;
-  height: 20vh;
+  height: auto;
 }
 
 .container-section-RDT1 {
   grid-area: container-section-RDT1;
-
+  height: auto;
 }
 
 .container-section-RDT2 {
@@ -94,60 +102,125 @@ h3 {
 
 .prob-sol-left {
   grid-column: 2 / span 2;
-  grid-row: 4
+  grid-row: 4;
+  padding: 25px 0 25px 0;
 }
 
 .prob-sol-right {
   grid-column: 5 / span 2;
-  grid-row: 4;
+  grid-row: 4; 
+  padding: 25px 0 25px 0;
 }
 
 .container-research {
-  grid-column: 2 / span 4;
+  display: grid; 
+  grid-template-columns: .6fr 1.1fr 4.3fr .6fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: 
+      ". . . ."
+      ". results-side-header results-para ."
+      ". . . .";
+  grid-column: 1 / -1;
   grid-row: 5;
   background-color: #F3E4DF;
 }
 
+.results-side-header {
+  grid-area: results-side-header;
+}
+
 .results-para {
-  grid-column: -6 / span 4;
-  grid-row: 5;
+  grid-area: results-para;
   background-color: #F3E4DF;
 }
 
 .container-research-percentages {
+  display: grid;
+  grid-template-columns: 1.4fr 4fr;
+  grid-template-rows: repeat(5, .5fr);
+  grid-template-areas:
+    ". percent1"
+    ". percent2"
+    ". percent3"
+    ". percent4"
+    ". percent5"
+      ;
   grid-column: 1 / -1;
   grid-row: 6;
   font-size: 1em;
   background-image: url(../images/plants.png);
   color: #F3E4DF;
-  text-align: center;
+  text-align: left;
+  padding: 12px;
+}
+
+.percent1 {
+    grid-area: percent1;
+    
+}
+
+.percent2 {
+    grid-area: percent2;
+}
+
+.percent3 {
+    grid-area: percent3;
+}
+
+.percent4 {
+    grid-area: percent4;
+}
+
+.percent5 {
+    grid-area: percent5;
 }
 
 
 .container-comp-analysis {
   grid-column: 2;
   grid-row: 7;
+  padding-top: 25px;
 }
 
 .ana-para {
   grid-column: 3 / span 4;
   grid-row: 7;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  
+  
 }
 
 .container-bottom-line {
-  grid-column: 50% / span 3;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 1.2fr 3fr 1fr;
+  grid-template-areas:
+      ". . ."
+      ". bottom-line-header ."
+      ". bottom-line-li .";
+  grid-column: 1 / -1;
   grid-row: 8;
   align-items: center;
   background-color: #2A404E;
   color: white;
 }
 
-h3.bottom-line-header {
-  text-align: center;
+.bottom-line-header {
+    grid-area: bottom-line-header;
 }
 
-ul, li.bottom-line-li {
-  display: block !important;
+.bottom-line-li {
+    grid-area: bottom-line-li;
+}
+
+h3.bottom-line-header {
+  text-align: center;
+  margin: 0;
+}
+
+.bottom-line-li li{
+  display: block;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -167,9 +240,10 @@ ul, li.bottom-line-li {
 
 .container-personas-boxes {
   display: grid;
-  grid-template-columns: repeat(2, 3fr) 1fr repeat(2, 3fr);
+  grid-template-columns: 4.2fr 4fr 1fr 4fr 3fr;
   grid-template-areas:
   ". persona-l . persona-r .";
+  grid-column: 1 / -1;
   grid-row: 10;
   line-height: 1em;
 
@@ -177,7 +251,8 @@ ul, li.bottom-line-li {
 
 .persona-l {
   grid-area: persona-l;
-  grid-column:
+
+  
 }
 .persona-r {
   grid-area: persona-r;
@@ -193,14 +268,17 @@ ul, li.bottom-line-li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 65vh;
+  height: 75vh;
   grid-column: 1 / -1;
 
   grid-row: 11;
   display: grid;
   grid-template-columns: .5fr 1fr 4fr .5fr;
+  grid-template-rows: 1fr 5fr 1fr;
   grid-template-areas:
-  ". stories-side-header stories-para .";
+  ". . . ."
+  ". stories-side-header stories-para ."
+  ". . . .";
 
 }
 
@@ -218,71 +296,107 @@ color: white;
 .container-user-flows {
   grid-column: 2;
   grid-row: 12;
+  padding: 25px 0 25px 0;
 }
 
 .flows-para {
   grid-column: 3 / span 4;
   grid-row: 12;
+  padding: 25px 0 25px 0;
 }
 
 .container-branding {
   grid-column: 2;
   grid-row: 13;
+  
 }
 
 .branding-para {
-  grid-column: 3 / span 4;
+  grid-column: 3 / span 3;
   grid-row: 13;
+   
 }
 
 .container-wireframes {
   grid-column: 2;
   grid-row: 14;
+ 
 }
 
 .wireframes-para {
   grid-column: 3 / span 4;
   grid-row: 14;
+
 }
 
 .iterations {
   grid-column: 2;
   grid-row: 15;
+
 }
 .iterations-para {
   grid-column: 3 / span 4;
   grid-row: 15;
+
 }
 
 .container-learned {
-  grid-column: 2;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: .6fr 1.1fr 4.3fr .6fr;
+  grid-template-rows: .5fr 2fr .5fr;
+  grid-template-areas:
+  ". . . ."
+  ". learned-side-header learned-para ."
+  ". . . .";
   grid-row: 16;
+  background-image: url(../images/Takeaways.png);
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  
+}
+
+.learned-side-header {
+    grid-area: learned-side-header;
 }
 
 .learned-para {
-  grid-column: 3 / span 4;
-  grid-row: 16;
+  grid-area: learned-para;
+  
 }
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-  grid-template-rows: 4fr 4fr;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: .5fr .25fr .75fr .5fr;
   grid-template-areas:
-  ". . connect-title . ."
-  ". . connect-blurb . .";
-  grid-row: 17 / span 2;
+  ". . . "
+  ". connect-title ."
+  ". connect-blurb ."
+  ". . .";
+ 
   text-align: center;
+  background-color: #F3E4DF;
+
 }
 
 .connect-title {
   grid-area: connect-title;
   padding: 0;
   font-size: 1.6em;
-  margin-top: 5em;
+  margin: 0;
+  
 
 }
 .connect-blurb {
   grid-area: connect-blurb;
 
+}
+
+a.social-link li{
+    padding: 12px;
 }
