@@ -1,102 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Frances Oh | UX UI Designer</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio/reset.css">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <head>
+        <title>Frances Oh | UX UI Designer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="portfolio/reset.css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
 
-</head>
-<body class="wrapper">
+    </head>
+    
+ <body class="container">
 
-<!-- Nav bar -->
 
-<header>
-  <nav class="navbar">
-    <ul class="top-nav">
-      <li class="nav">
-        <a href="#casestudy">Work</a>
-      </li>
+<!-- HERO & MAIN NAVIGATION -->
 
-      <li class="nav">
-        <a href="about.html">About</a>
-      </li>
 
-      <li class="nav">
-        <a href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- Personal logo -->
-  <img src="images/personal-logo/personal-logo.png" alt="personal-logo" id="logo"/>
+    <!-- Personal logo -->
+    <header class="main-header">
+      <img src="images/personal-logo/personal-logo.png" alt="personal-logo"/>
 
-</header>
+    <!-- NAV BAR -->
+      <nav class="navbar">
+        <ul>
+          <li class="nav"><a href="#section-next">Work</a></li>
+          <li class="nav"><a href="about.html">About</a></li>
+          <li class="nav"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
 <!-- Hero -->
     <div class="hero-background">
+
         <div class="hero-intro">
-            <h1 id="site-title">hello!</h1>
+            <h1>hello!</h1>
         </div>
 
-    <div class="intro-content">
+        <div class="intro-content">
         <h1 class="headline">
           I’m Frances - <br>
           a UX designer in Orange County, CA.
         </h1>
-        <p class="hero-description">Come see what I've been working on.</p>
+        <h2 class="hero-description">Come see what I've been working on.</h2>
+        </div>
     </div>
 
 <!-- Portfolio Projects -->
-    <section class="container">
-            <div class="portfolio-piece">
-                <a href="project1.html"></a>
-                <img src="images/homepage-casestudy-1.png" alt="Store.it case study link" class="image"/>
-                <!-- <h3 class="portfolio-piece-title">Store.it</h3>
-                <p class="portfolio-piece-desc">Store.it is a SaaS product
-                  that <br> allows users to organize and <br> share content
-                  with a <br> straightforward design.</p> -->
+    <section class="container-projects">
+            <div class="project1">
+                <a href="project1.html">
+                <img src="images/homepage-casestudy-1.png" alt="Store.it case study link" class="image"/></a>
+                <div class="overlay">
+                    <div class="text">Store.it</div>
+                </div>
             </div>
-            <div class="portfolio-piece">
-                <a href="project2.html"></a>
-                <img src="images/homepage-casestudy-2.png" alt="Touch of Care case study link" class="image"/>
-                <!--<h3 class="portfolio-piece-title">Project 2</h3>
-                <p class="portfolio-piece-desc">Project Blurb</p> -->
+                   
+            
+            <div class="project2">
+                <a href="project2.html">
+                <img src="images/homepage-casestudy-2.png" alt="Touch of Care case study link" class="image"/></a>
+                <div class="overlay">
+                    <div class="text">Touch of Care</div>
+                </div>
             </div>
-            <div class="portfolio-piece">
-                <a href="project3.html"></a>
-                <img src="images/homepage-casestudy-3.png" alt="La Fleur case study link" class="image"/>
-                <!--<h3 class="portfolio-piece-title">Project 3</h3>
-                <p class="portfolio-piece-desc">Project Blurb</p> -->
+            <div class="project3">
+                <a href="project3.html">
+                <img src="images/homepage-casestudy-3.png" alt="La Fleur case study link" class="image"/></a>
+                <div class="overlay">
+                    <div class="text">La Fleur</div>
+                </div>
             </div>
-            <div class="portfolio-piece">
+            <div class="project4">
                 <img src="images/homepage-casestudy-4.png" alt="Coming Soon case study link" class="image"/>
-                <!--<h3 class="portfolio-piece-title">Coming Soon...</h3>
-                <p class="portfolio-piece-tags">Project Blurb</p>  -->
+                
             </div>
       </section>
 
 
 <!-- Footer -->
-    <section class="contact">
+    <footer class="contact">
       <h3 class="connect-title">Let's Connect!</h3>
-      <p class="connect-blurb">Want to chat about a potential project or simply grab coffee?<br>
+    
+    <section class="connect-blurb">
+      <p>Want to chat about a potential project or simply grab coffee? <br>
           I’m looking for new opportunities and
           would love to hear from you!</p>
+      <div class="social">
+        <li> <a href="https://www.linkedin.com/in/francesoh/">LinkedIn</a> </li>
+        <li> <a href="https://github.com/ifohi/ifohi.github.io">GitHub</a> </li>
+        <li> <a href="https://twitter.com/ohnam0221">Twitter</a> </li>
+        <li> <a href="mailto:fhoh85@gmail.com">Email</a> </li>
+      </div>
+     </section>
+    </footer>
 
-        <div class="social-link">
-          <a href="https://www.linkedin.com/in/francesoh/">LinkedIn</a>
-          <a href="https://github.com/ifohi/ifohi.github.io">GitHub</a>
-          <a href="https://twitter.com/ohnam0221">Twitter</a>
-          <a href="mailto:fhoh85@gmail.com">Email</a>
-
-        </div>
-
-      <!-- Contact Me button link
-      <a href="" class="button" id="contact-cta">Contact Me</a>  -->
-
+      <!-- Copyright -->
+    <section>
+        <p class="copyright">&copy; 2018 Frances Oh  |  Designed and Developed by Frances Oh</p>
     </section>
-<!-- Copyright -->
-  <p class="copyright">&copy; 2018 Frances Oh  |  Designed and Developed by Frances Oh</p>
-</body>
+
+ </body>
 </html>

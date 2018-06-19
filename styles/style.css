@@ -1,3 +1,10 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   line-height: 1.6;
   display: grid;
@@ -21,13 +28,150 @@ ul, li {
   display: inline;
 }
 
-h3 {
+h1, h2, h3 {
   font-family: Lato;
-
 }
+
+$colors: (
+  'green': #01FF89,
+  'purple': #7A5FFF,
+  'black': #141414,
+);
+
+a {	
+  color: transparent;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 
+    0 0 map_get($colors, 'black'), 
+    .08em 0 0 #fff,
+    0 0, 
+    -.08em 0 0 #fff;
+  vertical-align: bottom;
+
+  &:after {
+    background: linear-gradient(
+      to bottom,
+      rgba( map_get($colors, 'black'), 0.8),
+      rgba( map_get($colors, 'black'), 0.8)
+    ) center 1.08em / 100% 2px no-repeat;
+
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 400%;
+    will-change: transform;
+    z-index: -1;
+  }
+
+  &:hover:after {
+    animation: underline-gradient 6s linear infinite;
+    background-image: linear-gradient(
+      90deg, 
+      rgba( map_get($colors, 'purple'), 0.8) 15%, 
+      rgba( map_get($colors, 'green'), 0.6) 35%,  
+      rgba( map_get($colors, 'purple'), 0.8) 85%
+    );
+  }
+}
+
+@keyframes underline-gradient { 
+  0%{
+    transform: translate3d(0%, 0%, 0);
+  }
+  100%{
+    transform: translate3d(-75%, 0%, 0);
+  }
+}
+
+.hero-intro {
+  margin-top: 1.5em;
+  font-size: 3em; 
+  text-align: center;
+  display: block;
+  color: #2A404E;
+  font-family: Lato;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /*border-right: .1em solid ;  The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #DCAE1D }
+}
+
+.hero-description, .headline {
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    text-align: center;
+    font: Lato;
+    font-weight: lighter;
+    
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFFAFA;
+  border-style: solid;
+  border-color: #FFE4E1;
+}
+
+.project1:hover .overlay {
+  opacity: 1;
+}
+
+.project2:hover .overlay {
+  opacity: 1;
+}
+
+.project3:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: #2A404E;
+  font-size: 1.8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project1, .project2, .project3 {
+    position: relative;
+}
+
 .navbar {
   float: right;
   padding-top: 25px;
+  
 }
 
 .navbar li {
@@ -38,6 +182,13 @@ h3 {
     padding: 12px;
 }
 
+
+.container-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin: 100px;
+    grid-gap: 1em;
+}
 .si-sub-headline {
     text-align: center;
     position: absolute;
@@ -112,6 +263,9 @@ h3 {
   padding: 25px 0 25px 0;
 }
 
+.si-li {
+  display: block;
+}
 .container-research {
   display: grid; 
   grid-template-columns: .6fr 1.1fr 4.3fr .6fr;
@@ -143,13 +297,12 @@ h3 {
     ". percent2"
     ". percent3"
     ". percent4"
-    ". percent5"
-      ;
+    ". percent5";
   grid-column: 1 / -1;
   grid-row: 6;
-  font-size: 1em;
+  font-size: 1.1em;
   background-image: url(../images/plants.png);
-  color: #F3E4DF;
+  color: whitesmoke;
   text-align: left;
   padding: 12px;
 }
@@ -268,6 +421,7 @@ h3.bottom-line-header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 100%;
   height: 75vh;
   grid-column: 1 / -1;
 
@@ -282,6 +436,10 @@ h3.bottom-line-header {
 
 }
 
+.stories-img {
+  max-width: 100%;
+  height: auto;
+}
 
 .stories-side-header {
   grid-area: stories-side-header;
@@ -305,6 +463,10 @@ color: white;
   padding: 25px 0 25px 0;
 }
 
+.flows-img {
+  max-width: 100%;
+  height: auto;
+}
 .container-branding {
   grid-column: 2;
   grid-row: 13;
@@ -317,6 +479,10 @@ color: white;
    
 }
 
+.branding-img {
+  max-width: 100%;
+  height: auto;
+}
 .container-wireframes {
   grid-column: 2;
   grid-row: 14;
@@ -389,14 +555,16 @@ color: white;
   padding: 0;
   font-size: 1.6em;
   margin: 0;
+  color: #2A404E;
   
 
 }
 .connect-blurb {
   grid-area: connect-blurb;
+    color: #2A404E;
 
 }
 
-a.social-link li{
-    padding: 12px;
+.social li {
+    padding-right: 20px;
 }
