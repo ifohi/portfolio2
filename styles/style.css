@@ -197,15 +197,18 @@ a.btn {
     padding: 15px 32px;
 }
 
-.hero-btn {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
- 
-}
+/*.hero-btn {
+  position: static;
 
+}*/
+
+.hero-btn {
+    margin-top: 100px;
+    text-align: center;
+   
+    
+    
+}
 .btn::before {
     content: '';
     position: absolute;
@@ -247,14 +250,12 @@ a.btn {
     transform: scale(0.1, 1);
 }
 
-.btn-wireframe {
-    color: black;
-}
+
 
 .si-sub-headline {
     text-align: center;
-    position: absolute;
-    top: 52%;
+    position: relative;
+    margin-top: 60px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -276,13 +277,11 @@ a.btn {
 }
 
 .si-icon-white {
-    display: block;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 8%;
+    display: block;
+    
 }
 
 .all-RDT {
