@@ -37,6 +37,7 @@ a {
   text-decoration: underline #BC8F8F;
   transition: color .2s ease;
 }
+
 /* unvisited link */
 a:link {
     color: #2A404E;
@@ -63,6 +64,7 @@ a:active {
   width: 65px;
   height: 65px;
 }
+
 
 
 .hero-intro {
@@ -108,32 +110,51 @@ a:active {
   display: grid;
   margin: 100px;
   grid-gap: 1em;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  grid-template-areas: 
+   ". project1 . project2 ."
+   ". project3 . project4 ."
 }
 
 .project1 {
-    grid-column: 1 / span 2;
+    grid-area: project1;
     
 }
 
 .project2 {
-    grid-column: 3 / span 2;
+    grid-area: project2;
 }
 
 .project3 {
-    grid-column: 1 / span 2;
+    grid-area: project3;
 }
 
 .project4 {
-    grid-column: 3 / span 2;
+    grid-area: project4;
+}
+
+div.card {
+    
+  width: 200px;
+  height: 250px;
 }
 
 .project-img {
-    width: 100%;
-    height: auto;
+  width: 200px;
+  height: 250px;
+}
+
+div.overlay {
+  
+  background-color: white;
+  opacity: 0.5;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  color: antiquewhite;
+
 }
 
 .overlay {
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
@@ -145,7 +166,8 @@ a:active {
   background-color: #FFFAFA;
   border-style: solid;
   border-color: #FFE4E1;
-}
+  color: white; 
+} 
 
 .project1:hover .overlay {
   opacity: 1;
@@ -158,6 +180,7 @@ a:active {
 .project3:hover .overlay {
   opacity: 1;
 }
+
 .text {
   color: #2A404E;
   font-size: 1.2em;
@@ -167,7 +190,7 @@ a:active {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
+}*
 
 .project1, .project2, .project3 {
     position: relative;
