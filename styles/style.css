@@ -113,8 +113,22 @@ a:active {
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
   grid-template-areas: 
    ". project1 . project2 ."
-   ". project3 . project4 ."
+   ". project3 . project4 .";
+  text-align: center;
 }
+
+@media (max-width: 600px) {
+ .container-projects {
+   display: grid;
+   text-align: center;
+   grid-template-columns: 2fr;
+   grid-template-areas:
+    "project1"
+    "project2"
+    "project3"
+    "project4";
+ }
+ }
 
 .project1 {
     grid-area: project1;
@@ -164,7 +178,7 @@ div.overlay {
   opacity: 0;
   transition: .5s ease;
   background-color: #FFFAFA;
-  border-style: solid;
+  
   border-color: #FFE4E1;
   color: white; 
 } 
@@ -179,7 +193,7 @@ div.overlay {
 
 .project3:hover .overlay {
   opacity: 1;
-}
+} 
 
 .text {
   color: #2A404E;
@@ -192,10 +206,10 @@ div.overlay {
   text-align: center;
 }*
 
-.project1, .project2, .project3 {
+/*.project1, .project2, .project3 {
     position: relative;
 
-}
+}*/
 
 .navbar {
   float: right;
@@ -510,6 +524,10 @@ h3.bottom-line-header {
   text-align: center;
 }
 
+.img-brandon, .img-sarah {
+    border-radius: 20%;
+}
+
 .all-stories {
   background-image: url(../images/user-stories-background.png);
   max-width: 100%;
@@ -571,9 +589,9 @@ color: white;
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: .6fr 1.1fr 4.3fr .6fr;
-  grid-template-rows: .2fr 1fr .5fr;
+  
   grid-template-areas:
-  ". . . ."
+  
   ". flows-side-header flows-para ."
   ". . . .";
   grid-row: 12;
@@ -654,7 +672,7 @@ color: white;
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: .6fr 1.1fr 4.3fr .6fr;
-  grid-template-rows: 3fr .5fr;
+  grid-template-rows: 5fr .1fr;
   grid-template-areas:
   
   ". iterations-side-header iterations-para ."
@@ -755,21 +773,20 @@ color: white;
 }
 
 *********************************
+
 /*Media queries*/
 
+
+    
 @media (max-width: 600px) {
   .prob-sol-left {
     grid-column: 2 / span 2;
   }
-}
 
-@media (max-width: 600px) {
   .prob-sol-right {
     grid-column: 4 / 7;
   }
-}
 
-@media (max-width: 600px) {
 .all-RDT {
   display: grid;
   grid-gap: 10px;
@@ -943,7 +960,7 @@ color: white;
    display: grid;
    grid-column: 1 / -1;
    grid-template-columns: .6fr 4.3fr .6fr;
-   grid-template-rows: .1fr 4fr ;
+   grid-template-rows: .1fr 3.7fr ;
    grid-template-areas:
    ". iterations-side-header ."
    ". iterations-para .";
