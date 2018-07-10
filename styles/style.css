@@ -11,6 +11,7 @@ body {
   grid-template-columns: 1fr repeat(5, 2fr) 1fr;
   grid-gap: 0px 12px;
   margin: auto;
+  font-family: 'Muli';
 
 }
 
