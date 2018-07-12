@@ -514,9 +514,8 @@ h3.bottom-line-header {
 
 .persona-l {
   grid-area: persona-l;
-
- 
 }
+
 .persona-r {
   grid-area: persona-r;
 
@@ -528,6 +527,10 @@ h3.bottom-line-header {
 
 .img-brandon, .img-sarah {
     border-radius: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .all-stories {
@@ -585,8 +588,8 @@ color: white;
 .ana-para {
   grid-area: ana-para;
  
- 
 }*/
+
 .container-user-flows {
   display: grid;
   grid-column: 1 / -1;
@@ -744,7 +747,7 @@ color: white;
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: .5fr .25fr .75fr;
+  grid-template-rows: .25fr .25fr .75fr .25fr;
   grid-template-areas:
   ". . . "
   ". connect-title ."
@@ -774,6 +777,30 @@ color: white;
     padding-right: 20px;
 }
 
+.container-portrait {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-areas: 
+        "portrait-img para-portrait";
+    grid-gap: 12px;
+}
+
+.portrait-img {
+    grid-area: portrait-img;
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.para-portrait {
+    grid-area: para-portrait;
+}
+
+/*.para-portrait2 {
+    grid-area: para-portrait2;
+}*/
 *********************************
 
 /*Media queries*/
@@ -788,7 +815,9 @@ color: white;
   .prob-sol-right {
     grid-column: 4 / 7;
   }
+}
 
+@media (max-width: 600px) {
 .all-RDT {
   display: grid;
   grid-gap: 10px;
@@ -988,4 +1017,22 @@ color: white;
   margin-bottom:0;   
  }
 }
-    
+
+@media (max-width: 600px) {
+.container-portrait {
+    display: grid;
+    grid-template-columns: .6fr 4.3fr .6fr;
+    grid-template-areas: 
+      ". portrait-img ."
+      ". para-portrait .";
+   
+}
+.portrait-img {
+grid-area: portrait-img;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+margin-bottom: 0px;
+}
+}
