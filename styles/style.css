@@ -1047,7 +1047,17 @@ margin-bottom: 0px;
 }
 }
 
-/* Laptop */
+/* Tablet & Laptop */
+@media (min-width: 900px) {
+    .all-stories {
+        height: 725px;
+    }
+    
+    .container-user-flows {
+        margin-top: 1.3em;
+    }
+}
+
 @media (min-width: 1200px) {
     .results-para, .ana-para, .flows-para, .personas-first-liner, .stories-para, 
     .branding-para, .wireframes-para, .iterations-para, .learned-para  {
@@ -1059,4 +1069,14 @@ margin-bottom: 0px;
         grid-template-columns: repeat(6, 1fr);
         grid-column: 2 / 3;
     }
+    
+    
+    .all-stories {
+        height: 725px;
+    }
+    
+    .container-user-flows {
+        margin-top: 1.3em;
+    }
+}
 
