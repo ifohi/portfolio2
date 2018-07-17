@@ -389,6 +389,7 @@ a.btn {
 .results-para {
   grid-area: results-para;
   background-color: #F3E4DF;
+  
 }
 
 .container-research-percentages {
@@ -494,10 +495,12 @@ h3.bottom-line-header {
 .container-personas {
   grid-column: 2;
   grid-row: 9;
+  margin-top: 1.3em;
 }
 .personas-first-liner {
   grid-column: 3 / span 4;
   grid-row: 9;
+  margin-top: 1.3em;
 
 }
 
@@ -509,6 +512,7 @@ h3.bottom-line-header {
   grid-column: 1 / -1;
   grid-row: 10;
   line-height: 1em;
+  margin-bottom: 1.3em;
 
 }
 
@@ -600,7 +604,7 @@ color: white;
   ". flows-side-header flows-para ."
   ". . . .";
   grid-row: 12;
-  
+  margin-top: 1.3em;
 }
 
 .flows-side-header {
@@ -796,17 +800,18 @@ color: white;
 
 .para-portrait {
     grid-area: para-portrait;
+    margin-bottom: 50px;
+    margin-top: 0px;
 }
 
-/*.para-portrait2 {
-    grid-area: para-portrait2;
-}*/
+
 *********************************
 
-/*Media queries*/
+/*MEDIA QUERIES*/
 
 
-    
+/*Mobile*/
+   
 @media (max-width: 600px) {
   .prob-sol-left {
     grid-column: 2 / span 2;
@@ -832,6 +837,9 @@ color: white;
   height: auto;
 }
 }
+
+
+
     
 @media (max-width: 600px) {
 .container-research {
@@ -864,6 +872,7 @@ color: white;
   grid-row: 6;
   font-size: 1em;
   
+}
 }
 
 @media (max-width: 600px) {
@@ -962,6 +971,7 @@ color: white;
  }
     
 }
+}
 
 @media screen and (max-width: 600px) {
   img.branding-img {
@@ -1036,3 +1046,17 @@ width: 100%;
 margin-bottom: 0px;
 }
 }
+
+/* Laptop */
+@media (min-width: 1200px) {
+    .results-para, .ana-para, .flows-para, .personas-first-liner, .stories-para, 
+    .branding-para, .wireframes-para, .iterations-para, .learned-para  {
+        width: 85%;
+    }
+    
+    a bottom.btn {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column: 2 / 3;
+    }
+
