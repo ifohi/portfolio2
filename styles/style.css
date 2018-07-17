@@ -107,7 +107,7 @@ a:active {
     
 }
 
-.container-projects {
+/*.container-projects {
   display: grid;
   margin: 100px;
   grid-gap: 1em;
@@ -116,7 +116,18 @@ a:active {
    ". project1 . project2 ."
    ". project3 . project4 .";
   text-align: center;
+} */
+
+.container-projects {
+  display: grid;
+  margin: 100px;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+   ". project1 .";
+  text-align: center;
 }
+
 
 @media (max-width: 600px) {
  .container-projects {
@@ -124,7 +135,7 @@ a:active {
    text-align: center;
    grid-template-columns: 2fr;
    grid-template-areas:
-    "project1"
+    "project1";
     "project2"
     "project3"
     "project4";
@@ -156,8 +167,8 @@ div.card {
 }
 
 .project-img {
-  width: 200px;
-  height: 250px;
+  
+  height: 300px;
 }
 
 div.overlay {
@@ -199,19 +210,18 @@ div.overlay {
 
 .text {
   color: #2A404E;
-  font-size: 1.2em;
+  font-size: 1.4em;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}*
+}
 
-/*.project1, .project2, .project3 {
-    position: relative;
 
-}*/
+
+
 
 .navbar {
   float: right;
@@ -237,10 +247,7 @@ a.btn {
     padding: 15px 32px;
 }
 
-/*.hero-btn {
-  position: static;
 
-}*/
 
 .hero-btn {
     margin-top: 10%;
@@ -813,6 +820,12 @@ color: white;
 /*Mobile*/
    
 @media (max-width: 600px) {
+    .hero-intro {
+      animation:
+        typing 1s steps(50, end);    
+    }
+}
+@media (max-width: 600px) {
   .prob-sol-left {
     grid-column: 2 / span 2;
   }
@@ -1056,6 +1069,14 @@ margin-bottom: 0px;
     .container-user-flows {
         margin-top: 1.3em;
     }
+    
+    .project-img {
+        height: 400px;
+    }
+    
+    .text {
+        font-size: 2em;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1078,5 +1099,16 @@ margin-bottom: 0px;
     .container-user-flows {
         margin-top: 1.3em;
     }
+    
+    .project-img {
+        height: 400px;
+
+    }
+    
+    .text {
+        font-size: 2em;
+    }
 }
+
+
 
