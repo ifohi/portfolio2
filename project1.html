@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="portfolio/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href='https://fonts.googleapis.com/css?family=Muli|Lato' rel='stylesheet'>
+    <script type="text/javascript" src="portfolio/main.js" ></script>
 </head>
 <body class="container container-si">
 
@@ -82,20 +83,19 @@
   </section>
 
 <!-- Probs & Solution -->
-  <section class="prob-sol-left">
+  <section class="prob-sol">
 
-    <h3>What is Store.it?</h3>
-    <p>It’s a SaaS web application that’s a go-to place to easily
+    <h3 class="question">What is Store.it?</h3>
+    <p class="q-para">It’s a SaaS web application that’s a go-to place to easily
       store, organize and share information. It has a clean &
       functional interface where users can start using it at the
       first login.</p>
-  </section>
-  <section class="prob-sol-right">
-    <h3>Problem</h3>
-    <p>Need a convenient place to save and share online content, such
+  
+    <h3 class="problem">Problem</h3>
+    <p class="prob-para">Need a convenient place to save and share online content, such
       as notes, links and images</p>
-    <h3>Solution</h3>
-    <p>Design a web application where users can easily save and share
+    <h3 class=solution>Solution</h3>
+    <p class="sol-para">Design a web application where users can easily save and share
        information. The app must be easy to use and accessible
        anywhere.
 
@@ -263,13 +263,84 @@ I was satisfied with v.3 , but after another round of testing, users’ comments
 So based on the feedback, in v.4, I added gray tiles at lower opacity with the file icon in the middle to help users see right away what kind of file it is and to give the dashboard a more uniform look.
 
 I also lightened the dashboard as majority of users wanted something “less constricting” and “airer.”</p>
-      <img src="images/dashboard-v1.png" alt="dashboard iterations" class="d-iteration-img"/>
+      <!--- <img src="images/dashboard-v1.png" alt="dashboard iterations" class="d-iteration-img"/>
       <img src="images/dashboard-v2.png" alt="dashboard iterations" class="d-iteration-img"/>
       <img src="images/dashboard-v3.png" alt="dashboard iterations" class="d-iteration-img"/>
-      <img src="images/dashboard-final.png" alt="dashboard iterations" class="d-iteration-img"/>
+      <img src="images/dashboard-final.png" alt="dashboard iterations" class="d-iteration-img"/> -->
+  </div>
+      
+      <h2 style="text-align:center">Dashboard Iterations</h2>
 
+<div class="row">
+  <div class="column">
+    <img src="images/dashboard-v1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/dashboard-v2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/dashboard-v3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/dashboard-final.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/dashboard-v1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/dashboard-v2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/dashboard-v3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/dashboard-final.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/dashboard-v1.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dashboard-v2.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dashboard-v3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dashboard-final.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+   </div>
   </div>
 </section>
+
+    
+
+    
+    
+<!--- Lightbox for dashboard iterations --> 
+
+    
 <!-- What I learned -->
   <section class="container-learned">
       <h3 class="learned-side-header">What I Learned</h3>
