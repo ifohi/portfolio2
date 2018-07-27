@@ -742,9 +742,6 @@ color: white;
 
 }
 
-.row {
-    grid-area: row;
-}
 
 
 .iteration-img {
@@ -758,6 +755,30 @@ color: white;
     margin-top: 22px;
     width: 300px;
     height: auto;
+}
+
+.container-lightbox {
+   display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: .6fr repeat(4, 1fr) .6fr;
+    grid-template-areas:
+        "d-iteration-img1 d-iteration-img2 d-iteration-img3 d-iteration-img4"
+}
+
+.d-iteration-img1 {
+    grid-area: d-iteration-img1;
+}
+
+.d-iteration-img2 {
+    grid-area: d-iteration-img2;
+}
+
+.d-iteration-img3 {
+    grid-area: d-iteration-img3;
+}
+
+.d-iteration-img4 {
+    grid-area: d-iteration-img4;
 }
 
 .container-learned {
