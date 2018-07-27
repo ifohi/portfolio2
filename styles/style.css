@@ -759,7 +759,7 @@ color: white;
 
 .container-lightbox {
    display: grid;
-    grid-column: 1 / -1;
+    
     grid-template-columns: .6fr repeat(4, 1fr) .6fr;
     grid-template-areas:
         "d-iteration-img1 d-iteration-img2 d-iteration-img3 d-iteration-img4"
@@ -767,20 +767,28 @@ color: white;
 
 .d-iteration-img1 {
     grid-area: d-iteration-img1;
+    width: 350px;
+    height: auto;
 }
 
 .d-iteration-img2 {
     grid-area: d-iteration-img2;
+    width: 350px;
+    height: auto;
+    
 }
 
 .d-iteration-img3 {
     grid-area: d-iteration-img3;
+    width: 350px;
+    height: 237px;
 }
 
 .d-iteration-img4 {
     grid-area: d-iteration-img4;
+    width: 350px;
+    height: 238px;
 }
-
 .container-learned {
   display: grid;
   grid-column: 1 / -1;
