@@ -762,7 +762,9 @@ color: white;
     
     grid-template-columns: .6fr repeat(4, 1fr) .6fr;
     grid-template-areas:
-        "d-iteration-img1 d-iteration-img2 d-iteration-img3 d-iteration-img4"
+        "d-iteration-img1 d-iteration-img2 d-iteration-img3 d-iteration-img4";
+    grid-gap: 12px;
+    
 }
 
 .d-iteration-img1 {
@@ -788,6 +790,12 @@ color: white;
     grid-area: d-iteration-img4;
     width: 350px;
     height: 238px;
+}
+
+.lb-data .lb-close {
+    position: absolute;
+    top: -30px;
+    margin-left: 340px;
 }
 .container-learned {
   display: grid;
