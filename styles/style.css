@@ -331,7 +331,7 @@ a.btn {
 
 .all-RDT {
   display: grid;
-  grid-template-columns: 1fr repeat(3, 4fr) 1fr;
+  grid-template-columns: 1fr repeat(3, 1fr) 1fr;
   grid-template-rows: 1fr 4fr 1.2fr;
   grid-template-areas:
       ". . . . ."
