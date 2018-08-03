@@ -675,7 +675,8 @@ color: white;
   ". . . .";
   grid-row: 13;
   background-image: url(../images/si-mind-map-logo-sketches.png);
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgba(255,255,255,0.6);
   background-blend-mode: lighten;
 }
@@ -1076,7 +1077,7 @@ color: white;
   
   ". branding-side-header ."
   ". branding-para .";
-  
+  background-size: 0%;
  }
 .branding-side-header {
    margin-bottom:0;   
