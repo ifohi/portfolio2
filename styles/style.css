@@ -779,8 +779,8 @@ color: white;
     width: 250px;
     height: auto;
     border-style: solid;
-    border-color: darkgrey;
-    border-width: .5px;
+    border-width: thin;
+    border-color: gainsboro;
 }
 
 
