@@ -567,18 +567,31 @@ h3.bottom-line-header {
 
 .persona-header, .persona-desc {
   text-align: center;
+  
 }
+.persona-header {
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+  margin-bottom: 2px;
+}
+
+.persona-desc {
+  margin-bottom: 5px;
+}
+
 
 .desc-uppercase {
     font-weight: semi-bold;
     text-decoration: underline;
+    margin-top: 22px;
 }
 .img-brandon, .img-sarah {
     border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 250px;
+    height: 250px;
 }
 
 
@@ -604,8 +617,7 @@ h3.bottom-line-header {
 }
 
 .stories-img {
-  max-width: 100%;
-  height: auto;
+  width: 80%;
 }
 
 .stories-side-header {
@@ -736,7 +748,6 @@ color: white;
   grid-area: wireframes-para;
 }
 
-
 .wireframe-img {
     
     height: 180px;
@@ -746,7 +757,16 @@ color: white;
     text-align: center;
 }
 
+.text-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
 
+.wireframes-caption {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
 .iterations {
   display: grid;
   
