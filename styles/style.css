@@ -1369,7 +1369,7 @@ a.btn {
     }
     
     .si-hero-container {
-      grid-template-rows: .8fr .5fr;
+      grid-template-rows: .8fr .3fr;
     }
 
     .container-user-flows {
@@ -1383,8 +1383,10 @@ a.btn {
     .text {
         font-size: 1.3em;
     }
-    .si-hero-container {
-        grid-template-rows: 1fr .5fr;
+    
+    
+    .bottom-btn {
+        grid-column: 5;
     }
 }
 
@@ -1394,11 +1396,6 @@ a.btn {
         width: 85%;
     }
     
-    a bottom.btn {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-column: 2 / 3;
-    }
     
     
     .all-stories {
