@@ -298,11 +298,11 @@ a.btn {
 
 .si-cut-display {
   grid-area: si-cut-display;
-  grid-column: 2 / 8;
+  grid-column: 1 / 8;
     grid-row: 1;
   align-items: center;
   justify-items: center;
-  width: 90%;
+  width: 100%;
   margin-top: 100px;
   
 }
@@ -589,6 +589,7 @@ h3.bottom-line-header {
 
 .persona-desc {
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 
@@ -614,12 +615,12 @@ h3.bottom-line-header {
   background-position: center;
   background-size: cover;
  
-  height: 80%;
+  height: 90%;
   grid-column: 1 / -1;
 
   grid-row: 11;
   display: grid;
-  grid-template-columns: .5fr 1fr 4fr .5fr;
+  grid-template-columns: .55fr 1fr 4fr .5fr;
   grid-template-rows: 1fr 5fr 1fr;
   grid-template-areas:
   ". . . ."
@@ -675,7 +676,7 @@ color: white;
   ". flows-side-header flows-para ."
   ". . . .";
   grid-row: 12;
-  margin-top: 1.3em;
+  
 }
 
 .flows-side-header {
@@ -911,7 +912,7 @@ color: white;
 }
 
 .bottom-btn {
-  grid-column: 5/ 8;
+  grid-column: 5;
   width: 250px;
   text-align: center;
   color: #494949 !important;
@@ -1028,8 +1029,9 @@ transition: all 0.4s ease 0s;
 }
 @media (max-width: 600px) {
 .project-img {
-        width: 300px;
+        width: 330px;
         height: auto;
+        margin-top:12px;
     }
 .project1-text {
     top: 1120px;
@@ -1211,9 +1213,11 @@ a.btn {
   grid-template-areas:
     ". flows-side-header ."
     ". flows-para .";
+  margin-top: 0;
     }
 .flows-side-header {
-   margin-bottom:0;   
+   margin-bottom:0;
+   margin-top: 0;
  }
     }
     
@@ -1221,6 +1225,7 @@ a.btn {
   img.flows-img {
     width: 550px;
     height: 150px;
+    margin-bottom: 12px;
     }
 }
 
@@ -1239,13 +1244,12 @@ a.btn {
 .branding-side-header {
    margin-bottom:0;   
  }
-    
-}
 }
 
 @media screen and (max-width: 600px) {
   img.branding-img {
     width: 550px;
+    margin-bottom: 12px;
     
     }
 }
@@ -1390,13 +1394,15 @@ a.btn {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
     .results-para, .ana-para, .flows-para, .personas-first-liner, .stories-para, 
     .branding-para, .wireframes-para, .iterations-para, .learned-para  {
         width: 85%;
     }
     
-    
+    .bottom-btn {
+        grid-column: 4 /8;
+    }
     
     .all-stories {
         height: 725px;
