@@ -1335,7 +1335,7 @@ a.btn {
     margin-top: 0;
   }
  .bottom-btn {
-    grid-column: 2 / 8;
+    grid-column: 8;
   }
 }
 
