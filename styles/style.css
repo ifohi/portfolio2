@@ -70,6 +70,12 @@ a:active {
 .headline, .hero-description {
     text-align: center;
     color: #2A404E;
+    line-height: 1.2em;
+    margin-top: 0;
+}
+
+.hero-description {
+    font-weight: 100;
 }
 .hero-intro {
   margin-top: 1.5em;
@@ -303,7 +309,7 @@ a.btn {
   align-items: center;
   justify-items: center;
   width: 100%;
-  margin-top: 100px;
+  
   
 }
 
@@ -912,7 +918,6 @@ color: white;
 }
 
 .bottom-btn {
-  grid-column: 5;
   width: 250px;
   text-align: center;
   color: #494949 !important;
@@ -959,7 +964,7 @@ transition: all 0.4s ease 0s;
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: .25fr .25fr .75fr .25fr;
+  grid-template-rows: .25fr .25fr .75fr;
   grid-template-areas:
   ". . . "
   ". connect-title ."
@@ -967,6 +972,7 @@ transition: all 0.4s ease 0s;
  
   text-align: center;
   background-color: #F3E4DF;
+  padding: 90px 50px;
 
 }
 
@@ -1342,6 +1348,10 @@ a.btn {
 @media (max-width: 600px) {
 .contact {
     grid-template-columns: 1fr 6fr 1fr;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
 }
 }
 
